@@ -101,3 +101,16 @@ button:hover{
     font-size:14px;
     color:#666;
 }
+#forecast{
+    margin-top:15px;
+}
+
+.forecast-item{
+    background:#ffffff;
+    padding:8px;
+    margin-top:8px;
+    border-radius:8px;
+    font-size:13px;
+}
+
+
