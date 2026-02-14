@@ -1,3 +1,4 @@
+/* ===== Reset ===== */
 *{
     margin:0;
     padding:0;
@@ -5,43 +6,43 @@
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
-/* ===== Sky Background ===== */
+/* ===== Background ===== */
 body{
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
 
-    background-image: url("./sky.jpg");
+    background-image: url("sky.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* ===== Main App Card ===== */
 .app{
-    width:360px;
-    padding:28px;
-    border-radius:18px;
+    width:480px;   /* increased for 5 forecast cards */
+    padding:30px;
+    border-radius:20px;
 
-    background: rgba(255,255,255,0.9);
-    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.92);
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
 
     text-align:center;
 }
 
-
 /* ===== Title ===== */
 h1{
-    font-size:24px;
+    font-size:26px;
     font-weight:600;
-    margin-bottom:22px;
+    margin-bottom:25px;
 }
 
 /* ===== Search Row ===== */
 .search-box{
     display:flex;
     gap:12px;
-    margin-bottom:22px;
+    margin-bottom:25px;
 }
 
 /* ===== Input ===== */
@@ -76,45 +77,55 @@ button:hover{
     transform: translateY(-1px);
 }
 
-/* ===== Weather Info Card ===== */
+/* ===== Weather Card ===== */
 .weather-card{
     background:#f6f8fa;
-    border-radius:14px;
-    padding:22px;
+    border-radius:16px;
+    padding:25px;
 }
 
-/* ===== Weather Text ===== */
+/* ===== Current Weather Text ===== */
 #temp{
-    font-size:36px;
+    font-size:40px;
     font-weight:600;
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 #desc{
-    font-size:17px;
+    font-size:18px;
     color:#444;
     text-transform:capitalize;
     margin-bottom:6px;
 }
 
-#humidity{
-    font-size:14px;
-    color:#666;
+#humidity,
+#wind{
+    font-size:15px;
+    color:#555;
+    margin-bottom:4px;
 }
 
+/* ===== Forecast Section ===== */
 #forecast{
     display:flex;
     justify-content:space-between;
-    margin-top:15px;
-    gap:8px;
+    margin-top:25px;
+    gap:10px;
 }
 
+/* ===== Forecast Cards ===== */
 .forecast-item{
     flex:1;
-    background: rgba(255,255,255,0.9);
-    padding:8px;
-    border-radius:10px;
+    background:white;
+    padding:12px 8px;
+    border-radius:14px;
     text-align:center;
-    font-size:12px;
+    font-size:13px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
 }
 
+.forecast-item strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:14px;
+}
