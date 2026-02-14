@@ -102,15 +102,21 @@ button:hover{
     color:#666;
 }
 #forecast{
+    display:flex;
+    justify-content:space-between;
     margin-top:15px;
+    gap:8px;
 }
 
 .forecast-item{
-    background:#ffffff;
+    flex:1;
+    background: rgba(255,255,255,0.9);
     padding:8px;
-    margin-top:8px;
-    border-radius:8px;
-    font-size:13px;
+    border-radius:10px;
+    text-align:center;
+    font-size:12px;
 }
+
+
 
 
