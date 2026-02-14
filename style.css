@@ -21,7 +21,7 @@ body{
 
 /* ===== Main App Card ===== */
 .app{
-    width:480px;   /* increased for 5 forecast cards */
+    width:600px;  
     padding:30px;
     border-radius:20px;
 
@@ -114,18 +114,20 @@ button:hover{
 }
 
 /* ===== Forecast Cards ===== */
-.forecast-item{
-    flex:1;
-    background:white;
-    padding:12px 8px;
-    border-radius:14px;
-    text-align:center;
-    font-size:13px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+#forecast{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 25px;
 }
 
-.forecast-item strong{
-    display:block;
-    margin-bottom:5px;
-    font-size:14px;
+.forecast-item{
+    background: white;
+    padding: 12px 8px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
+
+
